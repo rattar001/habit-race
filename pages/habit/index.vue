@@ -1,6 +1,6 @@
 <template>
     <h1> Habit Page </h1>
-    <Button @click="addHabit()"> Add Habit </Button>
+    <Button variant="primary" @click="addHabit()"> Add Habit </Button>
     <div v-for="(habit, index) in habits">
         {{ habit }}
     </div>
