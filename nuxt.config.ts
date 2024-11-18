@@ -5,5 +5,12 @@ export default defineNuxtConfig({
   typescript: {
     strict: true,
     shim: false
-  }
+  },
+  css: ['~/assets/css/tailwind.css'],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 })
